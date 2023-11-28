@@ -378,7 +378,7 @@ void AsyncMqttClient::_onError(AsyncClient* client, int8_t error) {
 void AsyncMqttClient::_onTimeout(AsyncClient* client, uint32_t time) {
   (void)client;
   (void)time;
-  disconnect(); //KG added for stability
+  // disconnect(); //KG added for stability
   // disconnection will be handled by ping/pong management
 }
 
